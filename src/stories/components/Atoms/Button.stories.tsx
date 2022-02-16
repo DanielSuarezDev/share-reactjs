@@ -10,6 +10,7 @@ export default {
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
     backgroundColor: { control: "color" },
+    borderColor: { controls: "border color" },
   },
 } as ComponentMeta<typeof Button>;
 
@@ -21,6 +22,7 @@ export const Primary = Template.bind({});
 Primary.args = {
   primary: true,
   label: "Button",
+  borderColor: "blue",
 };
 
 export const Secondary = Template.bind({});
